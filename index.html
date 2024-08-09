@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+
+      <link rel="stylesheet" href="./css/bootstrap.min.css" />
+      <link rel="stylesheet" href="./css/main.css" />
+   </head>
+   <body>
+      
+      <main class="w-75  mx-auto  ">
+         <section class="bg-info p-3">
+
+            <div class="inputs-form mb-2 ">
+               <label for="productName">ProductName:</label>
+               <input type="text"  class="form-control " id="productName" placeholder="productName" >
+               <p id="InvalidName" class="alert alert-danger d-none">Product Name Don't Match The Name Must be Start UpperCase and at Least 3 Char</p>
+            </div>
+            <div class="inputs-form mb-2 ">
+               <label for="productPrice">ProductPrice:</label>
+               <input  type="number"  class="form-control" id="productPrice" placeholder="productPrice" >
+               <p id="InvalidPrice" class="alert alert-danger d-none">Price must be Greater Than Zero and br 2 number at least</p>
+
+            </div>
+            <div class="inputs-form mb-2 ">
+               <label for="productCategory">productCategory:</label>
+               <input  type="text"  class="form-control" id="productCategory" placeholder="productCategory" >
+               <p id="InvalidCategory" class="alert alert-danger d-none">Category Name Don't Match The Name Must be Start UpperCase and at Least 3 Char</p>
+
+            </div>
+            <div class="inputs-form mb-2 ">
+               <label for="productDescription">productDescription:</label>
+                  <textarea  class="form-control " id="productDescription" placeholder="productDescription"></textarea>
+            </div>
+
+            <button id="addbtn" class="btn btn-primary w-100"  >Add Product</button>
+            <button id="updatebtn" class="btn btn-primary w-100 d-none"  >Update Product</button>
+
+
+         </section>
+         <input id="searchInput"  type="text" class="form-control my-3 w-175 m-auto" placeholder="Search...">
+
+         <section class="bg-danger mt-4">
+            <table class="table">
+               <thead>
+                  <tr>
+                     <th>Name</th>
+                     <th>Price</th>
+                     <th>Category</th>
+                     <th>Description</th>
+                     <th>Action</th>
+                  </tr>
+               </thead>
+               <tbody id="data">
+                 
+               </tbody>
+            </table>
+         </section>
+      </main>
+
+      <script src="./js/bootstrap.bundle.min.js"></script>
+      <script src="./js/main.js"></script>
+   </body>
+</html>
